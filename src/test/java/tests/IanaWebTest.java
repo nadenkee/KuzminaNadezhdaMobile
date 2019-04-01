@@ -15,7 +15,7 @@ public class IanaWebTest extends hooks {
         super(PropertiesSetUp.WEB);
     }
 
-    @Test(description = "Open website")
+    @Test(description = "Open website", groups = "web")
     public void webTest() throws Exception {
         int statusCode;
         statusCode = RestAssured.get(SUT).statusCode();
