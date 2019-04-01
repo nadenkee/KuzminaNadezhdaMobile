@@ -6,6 +6,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import setups.hooks;
 
+import java.io.IOException;
+
 import static enums.Constants.*;
 
 @Test(groups = {"cloud"})
@@ -19,7 +21,7 @@ public class cloudTests extends hooks {
     }
 
     //Choose web.properties
-    protected cloudTests() {
+    protected cloudTests() throws IOException {
         super(PropertiesSetUp.WEB);
     }
 
